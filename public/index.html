@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="main-container">
+        <h1>Enter the name of the city </h1>
+        <form id="input-elements">
+            <input type="text" placeholder="egs. New York" id='inputField'>
+            <input type="submit" value="Find" id='submit-btn'>
+        </form>
+        <div class="temp">
+            <h3>Temperature</h3>
+            <p id='temp'>20 &deg;C</p>
+        </div>
+        <div class="pressure">
+            <h3>Pressure</h3>
+            <p id='pressure'>80 mb</p>
+        </div>
+        <div class="humidity">
+            <h3>Humidity</h3>
+            <p id='humidity'>50 %</p>
+        </div>    
+    </div>
+    <script src="./app.js" async defer>alert('Hi')</script>
+</body>
+</html>

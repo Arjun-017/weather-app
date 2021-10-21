@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #5CDB95;
+    color: #01182f;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main-container{
+    max-width:500px;
+}
+
+.main-container h1{
+    font-weight: 500;
+    font-size: 35px;
+    margin: 25px 5px 20px 5px;
+}
+
+.main-container #input-elements{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 40px;
+    margin: 10px 15px;
+    justify-content: space-between;
+    background-color: transparent;   
+}
+
+.main-container #input-elements #inputField{
+    background-color: transparent;
+    border: 1px solid #01182f;
+    outline: none;
+    width: 300px;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 5px;
+    color: #01182f;
+}
+
+.main-container #input-elements #submit-btn{
+    background-color: transparent;
+    border: 1px solid #01182f;
+    outline: none;
+    width: 100px;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 5px;
+    color: #01182f;
+    transition: background-color 250ms ease;
+}
+
+.main-container #input-elements #submit-btn:hover{
+    background-color: #01182f;
+    color: #5CDB95;
+    cursor: pointer;
+}
+
+
+.main-container div{
+    margin-top: 20px;
+}
+.main-container h3{
+    font-size: 18px;
+    font-weight: 200;
+    margin: 10px 15px;
+}
+.main-container p{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 10px 15px;
+}
+
+@media only screen and (max-width:500px) {
+
+    body{
+        height: auto;
+    }
+
+    .main-container{
+        width: 100vw;
+    }
+    .main-container h1{
+        font-size: 25px;
+        margin: 50px 15px 30px;
+    }
+    .main-container #input-elements {
+        height: 40px;
+        margin: 5px 15px 30px;
+    }
+    .main-container #input-elements #inputField{
+        font-size: 15px;
+    }
+    .main-container #input-elements #submit-btn{
+        font-size: 15px;
+    }
+    .main-container .temp,.pressure,.humidity {
+        margin: 40px 15px;
+    }
+    .main-container h3{
+        font-size: 20px;
+        font-weight: 200;
+        margin: 10px 0px;
+    }
+    .main-container p{
+        font-size: 35px;
+        font-weight: 600;
+        margin: 10px 0px;
+    }
+}
+@media only screen and (max-width: 370px){
+    .main-container h1{
+        font-size: 30px;
+    }
+    .main-container #input-elements #inputField{
+        width: 70%;
+    }
+    .main-container #input-elements #submit-btn{
+        width: 30%;
+    }
+}
