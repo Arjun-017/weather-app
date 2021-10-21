@@ -21,7 +21,7 @@ async function updateWeather(city) {
     await fetch(`/api?q=${city}`)
     .then(async res => {
         var data = await res.json()
-        if(data.cod === 404){
+        if(data.cod === '404'){
             alert('City not found')
             return
         }
